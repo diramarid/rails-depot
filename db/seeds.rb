@@ -13,3 +13,7 @@ Product.create!(title: 'Programming Ruby 1.9 * 2.0',
                 image_url:  'ruby.jpg',
                 price:  49.95
                 )
+                
+
+
+
