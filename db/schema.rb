@@ -30,10 +30,10 @@ ActiveRecord::Schema.define(version: 20160901122612) do
   add_index "line_items", ["product_id"], name: "index_line_items_on_product_id"
 
   create_table "products", force: :cascade do |t|
-    t.string   "title"
+    t.string   "title",       limit: 255
     t.text     "description"
-    t.string   "image_url"
-    t.decimal  "price",       precision: 8, scale: 2
+    t.string   "image_url",   limit: 255
+    t.decimal  "price",                   precision: 8, scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end
